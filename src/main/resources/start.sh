@@ -3,6 +3,9 @@ cd `dirname $0`
 JARFILE=`ls *.jar`
 Package_name=${JARFILE%%.jar*}
 hostname=`hostname`
+if [[ ! -e /data/log/gclogs ]]; then
+  mkdir -p /data/log/gclogs
+fi
 CMD="-XX:+HeapDumpOnOutOfMemoryError \
      -XX:+PrintGCDetails \
      -XX:MaxGCPauseMillis=200 \
