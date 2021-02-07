@@ -1,0 +1,17 @@
+
+#apollo配置
+apollo:
+  bootstrap:
+    eagerLoad:
+      enabled: true
+    enabled: true
+    #多个namespace
+    namespaces: application,phone1000.platform-common
+#app.id
+app:
+  id: web-demo
+
+#激活环境
+spring:
+  profiles:
+    active: ${env}
