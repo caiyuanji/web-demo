@@ -6,6 +6,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class helloController {
     @RequestMapping("/")
     public String hello() {
-        return "<h1> <font color=#ff0000> Hello QF devops -- v1.0.1  </font>";
+        return "<h1> <font color=#ff0000> Hello QF devops -- v1.0.2  </font>";
     }
 }
